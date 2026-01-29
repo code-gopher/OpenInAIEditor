@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <id>com.github.qiuapeng921.openaieditor</id>
+    <name>Open In AIEditor</name>
+    <vendor email="qiuapeng921@gmail.com" url="https://github.com/qiuapeng921/open-in-aieditor">qiuapeng921</vendor>
+
+    <!-- 插件分类和标签 -->
+    <category>Tools Integration</category>
+    
+    <!-- 产品和插件兼容性要求 -->
+    <depends>com.intellij.modules.platform</depends>
+    
+    <!-- 兼容的 IDE 产品：2023.3 及所有后续版本 -->
+    <idea-version since-build="233"/>
+
+    <!-- 插件定义的扩展点 -->
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- AIEditor 可执行文件路径设置页面 -->
+        <applicationConfigurable 
+            parentId="tools" 
+            instance="com.github.qiuapeng921.openaieditor.settings.AIEditorSettingsConfigurable"
+            id="com.github.qiuapeng921.openaieditor.settings.AIEditorSettingsConfigurable"
+            displayName="AIEditor"/>
+        
+        <!-- 通知组 -->
+        <notificationGroup id="AIEditor" displayType="BALLOON"/>
+        
+        <!-- 状态栏组件 -->
+        <statusBarWidgetFactory 
+            id="com.github.qiuapeng921.openaieditor.statusbar.EditorSelectorWidgetFactory"
+            implementation="com.github.qiuapeng921.openaieditor.statusbar.EditorSelectorWidgetFactory"/>
+    </extensions>
+
+    <actions>
+        <!-- AIEditor 动态菜单组 -->
+        <group id="com.github.qiuapeng921.openaieditor.AIEditorGroup" 
+               text="Open In AIEditor" 
+               description="在 AI 编辑器中打开" 
+               popup="true"
+               class="com.github.qiuapeng921.openaieditor.actions.AIEditorActionGroup">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </group>
+    </actions>
+</idea-plugin>
