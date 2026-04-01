@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2026-04-01
+
+### 🎉 兼容性改进
+- **移除版本上限**: 不再限制最高支持版本，插件现在支持所有未来的 IntelliJ IDEA 版本
+- **长期兼容性**: 从 2023.3 开始，支持所有后续版本，无需频繁更新插件
+
+### 📝 技术改进
+- 移除 `untilBuild` 配置限制，确保插件可以在未来版本的 IDE 中正常工作
+
 ## [1.0.1] - 2025-12-18
 
 ### 🐛 Bug 修复

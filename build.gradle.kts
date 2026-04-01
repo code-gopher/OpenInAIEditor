@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.qiuapeng921.openaieditor"
-version = "1.0.1"
+version = "1.0.2"
 
 repositories {
     mavenCentral()
@@ -43,7 +43,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("233")
-        untilBuild.set("253.*")  // 支持到 2025.3.x
+        // 不设置 untilBuild，支持所有未来版本
         
         // 插件描述信息
         pluginDescription.set("""
