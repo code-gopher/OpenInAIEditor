@@ -1,7 +1,7 @@
 # Open In AIEditor
 
-[![Build](https://github.com/qiuapeng921/OpenInAIEditor/actions/workflows/build.yml/badge.svg)](https://github.com/qiuapeng921/OpenInAIEditor/actions/workflows/build.yml)
-[![Release](https://github.com/qiuapeng921/OpenInAIEditor/actions/workflows/release.yml/badge.svg)](https://github.com/qiuapeng921/OpenInAIEditor/actions/workflows/release.yml)
+[![Build](https://github.com/code-gopher/OpenInAIEditor/actions/workflows/build.yml/badge.svg)](https://github.com/code-gopher/OpenInAIEditor/actions/workflows/build.yml)
+[![Release](https://github.com/code-gopher/OpenInAIEditor/actions/workflows/release.yml/badge.svg)](https://github.com/code-gopher/OpenInAIEditor/actions/workflows/release.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 一个强大的 JetBrains IDE 插件，让你可以快速在 AI 代码编辑器中打开当前文件或项目。
@@ -34,7 +34,7 @@
 
 ### 手动安装
 
-1. 从 [Releases](https://github.com/qiuapeng921/OpenInAIEditor/releases) 下载最新的 ZIP 文件
+1. 从 [Releases](https://github.com/code-gopher/OpenInAIEditor/releases) 下载最新的 ZIP 文件
 2. 打开 IDE 设置 (`Settings` / `Preferences`)
 3. 选择 `Plugins` → `⚙️` → `Install Plugin from Disk...`
 4. 选择下载的 ZIP 文件
